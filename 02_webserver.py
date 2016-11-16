@@ -2,7 +2,7 @@ import threading
 import socket
 def server_echo (sock):
     while True:
-        conn, addr = s.accept()
+        conn, addr = sock.accept()
         while True:
             data = conn.recv(1024)
             if not data: break
